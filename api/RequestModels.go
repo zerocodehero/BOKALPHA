@@ -1,10 +1,10 @@
 /*
  @author: lynn
- @date: 2023/5/18
- @time: 23:22
+ @date: 2023/5/19
+ @time: 09:00
 */
 
-package models
+package api
 
 type RequestData struct {
 	Url     string

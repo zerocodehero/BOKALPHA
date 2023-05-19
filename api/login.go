@@ -6,8 +6,6 @@
 
 package api
 
-import "github.com/zerocodehero/BOKALPHA/models"
-
 type LoginParams struct {
 	CustID   string `json:"custId"`
 	CompID   string `json:"compId"`
@@ -16,7 +14,7 @@ type LoginParams struct {
 	Source   string `json:"source"`
 }
 
-func (L LoginParams) Data() (data models.RequestData) {
+func (L LoginParams) Data() (data RequestData) {
 	data.Url = "https://api.bokao2o.com/auth/merchant/v2/user/login"
 	data.Params = map[string]string{
 		"custId":   L.CustID,
